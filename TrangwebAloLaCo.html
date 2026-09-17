@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/TrangwebAloLaCo.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <header class="thecha">
+        <div class="header">
+            <div class="logo">
+                <img src="./image1/logo.png">
+            </div>
+            <input type="checkbox" id="menu-toggle">
+
+            <label for="menu-toggle" class="menu-icon">☰</label>
+            <ul class="menu">
+                <label for="menu-toggle" class="close">×</label>
+                <li><a href="#">TRANG CHỦ</a></li>
+                <li><a href="#">VỀ ALOLACO</a></li>
+                <li><a href="#">THỰC ĐƠN</a></li>
+                <li><a href="#">KHUYẾN MÃI</a></li>
+                <li><a href="#">DỊCH VỤ</a></li>
+                <li><a href="#">TIN TỨC</a></li>
+                <li><a href="#">CỬA HÀNG</a></li>
+                <li><a href="#">LIÊN HỆ</a></li>
+                <li class="bovien"><a href="#">TUYỂN DỤNG</a></li>
+            </ul>
+        </div>
+        </div>
+        <div class="dangnhap">
+            <!-- thanh trên cùng -->
+            <div class="header-top">
+                <div class="topbar-right">
+                    <div class="topbar-lang">
+                        <a href="#" class="active"><img src="./image1/vn.png" alt="">VN</a>
+                        <span class="sep">|</span>
+                        <a href="#"><img src="./image1/en.png" alt="">EN</a>
+                    </div>
+                    </a>
+                    <a href="#" class="topbar-auth">
+                        <img src="./image1/user.png" alt="User Icon" class="user-icon">
+                        ĐĂNG KÝ / ĐĂNG NHẬP
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- banner -->
+    <div class="banner">
+
+        <div id="basicCarousel" class="carousel slide">
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="./image1/banner1.jpg" class="d-inline-block w-100">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./image1/banner2.jpg" class="d-inline-block w-100">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./image1/banner3.jpg" class="d-inline-block w-100">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./image1/banner4.jpg" class="d-inline-block w-100">
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" data-bs-target="#basicCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button class="carousel-control-next" data-bs-target="#basicCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button data-bs-target="#basicCarousel" data-bs-slide-to="0" class="active">
+                </button>
+
+                <button data-bs-target="#basicCarousel" data-bs-slide-to="1">
+                </button>
+
+                <button data-bs-target="#basicCarousel" data-bs-slide-to="2">
+                </button>
+
+                <button data-bs-target="#basicCarousel" data-bs-slide-to="3">
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+   
+    <!-- phần main -->
+
+    <div class="thecha1">
+        <div class="row">
+
+            <div class="container-left">
+                <h1 style="font-weight: bold; font-size: 24px; letter-spacing: 2px;">Alolaco</h1>
+                <h2>WHAT TO EAT TODAY</h2>
+                <p>
+                    Chào mừng bạn đến với AloLaCo-nơi niềm vui hội tụ cùng hương vị tuyệt hảo trong chớp mắt!
+                    Hãy khám phá thực đơn ăn gì hôm nay và thưởng thức ngay những phần gà rán giòn rụm, mỳ ý đậm đà,
+                    khoai tây chiên vàng giòn cùng bánh hamburger hấp dẫn.
+                    Nhanh chóng, thơm ngon và luôn phục vụ với nụ cười rạng rỡ dành cho bạn và gia đình.
+                    Hãy ghé ngay Alolaco để trải nghiệm những bữa ăn thật trọn vẹn nhé!
+                </p>
+            </div>
+            <main style=" background-color: #dc133f; border-radius: 20px; width: 200px; margin: auto; ">
+                ALOLACO MENU
+            </main>
+
+            <div class="thecha2">
+                <div id="homeScreen">
+                    <div class="category-grid">
+                        <!-- Món 1 -->
+                        <div class="category-card" onclick="openCategory('Gà Giòn Vui Vẻ')">
+                            <img src="./imgweb/garan.jpg" alt="Gà rán">
+                            <div class="card-label">Gà Giòn Rộp Rộp</div>
+                        </div>
+
+                        <!-- Món 2 -->
+                        <div class="category-card" onclick="openCategory('Gà Sốt Cay')">
+                            <img src="./imgweb/gasotcay.jpg" alt="Gà sốt cay">
+                            <div class="card-label">Gà Sốt Cay</div>
+                        </div>
+
+                        <!-- Món 3 -->
+                        <div class="category-card" onclick="openCategory('Mỳ Ý Sốt Bò Bằm')">
+                            <img src="./imgweb/miy.jpg" alt="Mỳ ý">
+                            <div class="card-label">Mỳ Ý Sốt Bò Bằm</div>
+                        </div>
+                        <!-- Món 4 -->
+                        <div class="category-card" onclick="openCategory('Nước Ngọt')">
+                            <img src="./imgweb/coca.jpg" alt="Nước ngọt">
+                            <div class="card-label">Nước Ngọt</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="detailScreen">
+                    <button class="back-btn" onclick="goHome()">← Quay lại thực đơn</button>
+                    <h2 id="categoryTitle"
+                        style="color: #dc133f; margin-bottom: 20px; border-bottom: 2px solid #eee; padding-bottom: 10px;">
+                    </h2>
+
+                    <div id="subItemList">
+                    
+                    </div>
+                </div>
+
+            </div>
+            
+           
+
+            <script >
+
+                const menuDetails = {
+                    'Gà Giòn Vui Vẻ': [
+                        { name: 'Gà Giòn', desc: 'No Nê Ăn Là Mê', price: '66.000 đ', img: 'https://i.ytimg.com/vi/2DZT0ZK_kzY/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDDw6-e6KohLx4J1iywuiYctt31aw' },
+                        { name: '6 Miếng Gà Giòn Vui Vẻ', desc: 'Gà kèm tương ăn vào là mê', price: '125.000 đ', img: 'https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=400' }
+                    ],
+                    'Gà Sốt Cay': [
+                        { name: 'Gà Sốt Cay', desc: 'Gà phủ sốt cay đậm đà hấp dẫn', price: '72.000 đ', img: 'https://mediamart.vn/images/uploads/2022/287c6cc2-836a-4106-88b1-d0325ef3e7ad.jpg' },
+                        { name: 'Gà kèm khoai ', desc: 'Ăn 1 miếng + sốt kem béo ngậy ngon mê ly', price: '109.000 đ', img: 'https://www.thatlangon.com/wp-content/uploads/2020/07/ga-ran1.jpg' },
+                        { name: 'Combo Gà Sốt Cay ', desc: 'Kèm phô mai béo ngậy', price: '89.000 đ', img: 'https://file.hstatic.net/200000700229/file/canh-ga-nuong-pho-mai-1.jpg' }
+                    ],
+                    'Mỳ Ý Sốt Bò Bằm': [
+                        { name: 'Mỳ Ý Sốt Cua', desc: 'Phần mỳ ý đặc trưng sốt cà chua Cua ', price: '85.000 đ', img: 'https://tse4.mm.bing.net/th/id/OIP.dyBLPAPn0Kij27XPY3uRQgHaEK?r=0&pid=Api&P=0&h=180' },
+                        { name: 'Mỳ Ý Sốt Tôm ', desc: 'Nhìn là thích ăn là ghiền', price: '55.000 đ', img: 'https://file.hstatic.net/1000030244/article/mi-y-hai-san-1_bcae5e82cae944cf9c46dc434ffcd890.jpg' },
+                        { name: ' Mỳ Ý ', desc: 'Bừng hương vị', price: '49.000 đ', img: 'https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=400' }
+                    ],
+                    'Nước Ngọt': [
+                        { name: '7 Up', desc: 'Nước ngọt có gas mát lạnh sảng khoái', price: '17.000 đ', img: 'https://product.hstatic.net/1000301274/product/_10100996__7up_320ml_sleek_lon_0366766c074a4b538595ed8d91dc6b0d_1024x1024.png' },
+                        { name: 'Nước Cam', desc: 'Hương vị cam tươi mát, sảng khoái', price: '17.000 đ', img: 'https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-ls6n2eua2z7o2a' },
+                        { name: 'Pepsi (Lon)', desc: 'Vị ngọt đặc trưng, cực đã', price: '17.000 đ', img: 'https://satrafoods.com.vn/uploads/san-pham-cung-loai/pepsi-320-330ml.jpg' }
+                    ]
+                };
+
+                function openCategory(categoryName) {
+                    document.getElementById('homeScreen').style.display = 'none';
+                    document.getElementById('detailScreen').style.display = 'block';
+                    document.getElementById('categoryTitle').innerText = categoryName;
+
+                    const listContainer = document.getElementById('subItemList');
+                    listContainer.innerHTML = '';
+
+                    if (menuDetails[categoryName]) {
+                        menuDetails[categoryName].forEach(item => {
+                            listContainer.innerHTML += `
+                        <div class="sub-item-card">
+                            <img src="${item.img}" alt="${item.name}">
+                            <h3>${item.name}</h3>
+                            <p>${item.desc}</p>
+                            <div class="price">${item.price}</div>
+                        </div>
+                    `;
+                        });
+                    }
+                }
+
+
+                function goHome() {
+                    document.getElementById('detailScreen').style.display = 'none';
+                    document.getElementById('homeScreen').style.display = 'block';
+                }
+            </script>
+        </div>
+    </div>
+     <div class="cart-bar bg-danger " onclick="alert('Đã mở giỏ hàng!')">
+        <span style="color: white;">🛒 Giỏ hàng</span>
+        <span style="color: white;">0 đ</span>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer">
+            <div class="hinh1">
+                <img src="./image1/logo.png" alt="">
+            </div>
+            <div class="congty">
+                <h4>CÔNG TY THHH AloLaCo Việt Nam</h4>
+                <ul>
+                    <li>Địa chỉ: Tầng 39, Tòa nhà VV Tower, số 190 Yên Lãng, Phường Đồng Xuân, Thành phố Hồ Chí
+                        Minh,
+                        Việt Nam</li>
+                    <li>Điện thoại: (028) 32323232</li>
+                    <li>Tổng đài: 1900-1111</li>
+                </ul>
+            </div>
+            <div class="f-mid">
+                <img src="./image1/hotline2.png" alt="">
+                <ul class="danhsach">
+                    <li><a href="#">Liên hệ</a></li>
+                    <li><a href="">Chính sách và quy định chung</a></li>
+                    <li><a href="">Chính sách thanh toán khi đặt hàng</a></li>
+                    <li><a href="">Chính sách hoạt động</a></li>
+                    <li><a href="">Chính sách bảo mật thông tin</a></li>
+                    <li><a href="">Chính sách cookie</a></li>
+                    <li><a href="">Thông tin vận chuyển và giao nhận</a></li>
+                    <li><a href="">Thông tin đăng ký giao dịch chung</a></li>
+                    <li><a href="">Hướng dẫn đặt phần ăn</a></li>
+                </ul>
+            </div>
+            <div class="f-right">
+                <h4>HÃY KẾT NỐI VỚI CHÚNG TÔI</h4>
+                <div class="FB">
+                    <div class="hinh2">
+                        <img src="./image1/fb.png" alt="">
+                    </div>
+                    <div class="tenfb"><a href="#">Facebook</a></div>
+                </div>
+            </div>
+
+    </footer>
+    <div class="cuoi">
+        <p>© 2026 ALoLaCo Việt Nam</p>
+    </div>
+
+</body>
+
+</html>
